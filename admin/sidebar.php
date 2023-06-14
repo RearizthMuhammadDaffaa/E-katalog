@@ -9,7 +9,7 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- MENU SIDEBAR / ASIDE -->
             <li class="nav-item">
-              <a href="index.php" class="nav-link active">
+              <a href="../data_barang/index.php" class="nav-link ">
                 <i class="nav-icon far fa-image"></i>
                 <p>
                   Data Barang
@@ -22,6 +22,30 @@
                 <i class="nav-icon far fa-image"></i>
                 <p>
                   Kategori
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../about/index.php" class="nav-link">
+                <i class="nav-icon far fa-image"></i>
+                <p>
+                  About
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../twitter/index.php" class="nav-link">
+                <i class="nav-icon far fa-image"></i>
+                <p>
+                  Twitter
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../social/index.php" class="nav-link">
+                <i class="nav-icon far fa-image"></i>
+                <p>
+                  social
                 </p>
               </a>
             </li>

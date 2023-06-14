@@ -1,0 +1,14 @@
+
+
+.sosmed-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sosmed-container p{
+  font-size: .7rem;
+}
+.sosmed-container img{
+margin: 10px;
+}
