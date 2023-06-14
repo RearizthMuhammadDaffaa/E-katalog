@@ -49,6 +49,14 @@
                 </p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="../slider/index.php" class="nav-link">
+                <i class="nav-icon far fa-image"></i>
+                <p>
+                  slider
+                </p>
+              </a>
+            </li>
             <!-- SIDEBAR / ASIDE -->
           </ul>
         </nav>

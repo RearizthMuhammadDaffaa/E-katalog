@@ -23,27 +23,17 @@
       <div id="templatemo_slider"><span class="sliderframe"></span>
         <div class="slider-wrapper theme-orman">
           <div id="slider" class="nivoSlider" style="position: relative; background: url(&quot;images/slider/06.jpg&quot;) no-repeat;">
-          <?php include "koneksi.php";
-          $query = mysqli_query($koneksi, "SELECT * FROM slider");
-          while ($data = mysqli_fetch_array($query)) :
-          ?>
-            <img src="admin/slider/gambar/<?= $data['icon']; ?>" alt="" style="display: none;">
-          <?php endwhile ?>
-            <a rel="nofollow" href="http://www.templatemo.com/page/3" class="nivo-imageLink" style="display: none;"><img src="images/slider/03.jpg" alt="Image 3" title="This is an example caption." style="display: none;"></a>
+            
+            <div class="nivo-directionNav"><a class="nivo-prevNav">Prev</a><a class="nivo-nextNav">Next</a></div>
             <?php include "koneksi.php";
           $query = mysqli_query($koneksi, "SELECT * FROM slider");
           while ($data = mysqli_fetch_array($query)) :
           ?>
-            <img src="admin/slider/gambar/<?= $data['icon']; ?>" alt="" style="display: none;">
+            <img src="admin/slider/gambar/<?= $data['icon']; ?>" alt="">
           <?php endwhile ?>
-            <div class="nivo-caption" style="opacity: 0.8; display: none;">
-              <p style="display: block;">This is another caption.</p>
-            </div>
-            <div class="nivo-directionNav"><a class="nivo-prevNav">Prev</a><a class="nivo-nextNav">Next</a></div>
-          
           </div>
         </div>
-        <script type="text/javascript" src="assets_front/js/jquery-1.6.1.min.js"></script>
+        <<script type="text/javascript" src="assets_front/js/jquery-1.6.1.min.js"></script>
         <script type="text/javascript" src="assets_front/js/jquery.nivo.slider.pack.js"></script>
         <script type="text/javascript">
           $(window).load(function() {
@@ -71,8 +61,9 @@
   <div id="templatemo_main"><span class="mf mft"></span><span class="mf mfb"></span>
     <?php
     include "koneksi.php";
-    $query = mysqli_query($koneksi, "SELECT * FROM
-data_barang");
+    $idkategori = $_GET['id'];
+    $query = mysqli_query($koneksi, "SELECT   data_barang.*,kategori.nama_kategori FROM data_barang INNER JOIN kategori ON data_barang.id_kategori = kategori.id WHERE kategori.id = $idkategori ORDER BY id DESC");
+    
     while ($data = mysqli_fetch_array($query)) {
 
     ?>
